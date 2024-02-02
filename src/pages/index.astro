@@ -1,0 +1,199 @@
+
+<astro>
+  
+  <!-- Importar estilos -->
+  <style>
+    @import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+    @import url("src/pages/styles.css"); /* Asegúrate de ajustar la ruta según la ubicación real de tu archivo CSS */
+  </style>
+
+---
+head: |
+<meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AXTOA Solutions</title>
+
+<!-- Importar Typed.js antes de script.js -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script type="module" src="./src/pages/script.js"></script>
+
+
+  <script type="module" src="https://unpkg.com/scrollreveal"></script>
+  <!-- typed.js -->
+  
+---
+
+
+  <!-- Cabecera -->
+  <header class="header">
+    <a href="#" class="logo">AXTOA</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home" style="--i:1;" class="active">Home</a>
+        <!-- <a href="#about" style="--i:2;">About</a> -->
+        <a href="#services" style="--i:3;">Services</a>
+        <a href="#portfolio" style="--i:4;">Portfolio</a>
+        <a href="#contact" style="--i:6;">Contact</a>
+
+        <!-- Dark mode toggle icon -->
+        <a style="--i:7; cursor:pointer;"><div id="dark-mode-toggle">
+          <i class="bx bx-moon"></i>
+      </div></a>
+    </nav>
+</header>
+
+
+
+  <!-- Sección de inicio -->
+  <section class="home" id="home">
+	<div class="home-content">
+		<h1>AXTOA Solutions</h1>
+		<h3>Your strategic partner to realize your vision of <span class="multiple-text"></span></h3>
+    <br>
+		<p>Promoting Solutions in Software Development, we transform ideas into digital realities. With experience in the development of custom software, eCommerce solutions and innovative services.</p>
+		
+    <div class="social-media">
+			<a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+			<a href="#" style="--i:8;"><i class='bx bxl-twitter'></i></a>
+			<a href="#" style="--i:9;"><i class='bx bxl-instagram-alt'></i></a>
+			<a href="#" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
+		</div>
+		<a href="#contact" class="btn">Contact us</a>
+	  </div>
+
+	  <div class="home-img">
+		<img src="./src/pages/images/logo.jpg" alt="" style="width: 50rem; height: 45rem;">
+	  </div>
+  </section>
+
+  <!-- Sección sobre mí -->
+  <!-- <section class="about" id="about">
+    <div class="about-img">
+		<img src="./src/pages/images/about.png" alt="">
+	  </div>
+  
+	  <div class="about-content">
+		<h2 class="heading">About <span>Me</span></h2>
+		<h3>FullStack Developer</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur quia quasi similique labore nemo
+		  voluptatibus beatae quae perferendis quibusdam asperiores saepe mollitia sapiente quod, explicabo enim quo
+		  corporis itaque.</p>
+		<a href="#" class="btn"></a>
+	  </div>
+  </section> -->
+
+  <!-- Sección de servicios -->
+  <section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Development</h3>
+            <p>Transform your ideas into fully functional and visually appealing websites with our web development services. We focus on creating seamless and interactive user experiences, ensuring your online presence stands out.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+            <i class="bx bx-bar-chart-alt"></i>
+            <h3>Marketing</h3>
+            <p>Elevate your brand's reach and impact through strategic marketing solutions. Our team employs data-driven approaches to optimize your marketing campaigns, ensuring maximum visibility and engagement.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+            <i class="bx bx-cog"></i>
+            <h3>Engineering</h3>
+            <p>Unlock innovative solutions and technical excellence with our engineering services. From cutting-edge software development to system optimization, we provide tailored engineering solutions that propel your business forward.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Sección de portafolio -->
+  <section class="portfolio" id="portfolio">
+	<h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="./src/pages/images/portfolio1.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="./src/pages/images/portfolio2.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="./src/pages/images/portfolio3.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="./src/pages/images/portfolio4.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="./src/pages/images/portfolio5.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="./src/pages/images/portfolio6.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>us</span></h2>
+
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile">
+        <input type="text" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p class="copyright" id="copyrightYear">All Rights Reserved &copy; <span id="currentYear"></span>&nbsp; &nbsp;  </p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+</astro>
+
+
